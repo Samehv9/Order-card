@@ -1,0 +1,114 @@
+* {
+    font-family: 'Red Hat Display', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+body {
+    background-image: url(img/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--Pale-blue);
+}
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.incontainer {
+    background: var(--Very-pale-blue);
+    width: 430px;
+    min-height: ;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 10px 30px 50px hsla(223, 40%, 77%, 0.626);
+}
+.incontainer .top-container img {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    position: relative;
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+.incontainer .center-container {
+    text-align: center;
+}
+.incontainer .center-container p:first-child {
+    font-weight: 900;
+    font-size: 30px;
+    color: var(--Dark-blue);
+    margin-bottom: 20px;
+}
+.incontainer .center-container p:last-child {
+    color: var(--Desaturated-blue);
+    font-weight: 500;
+    font-size: 16px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.music-container {
+    background: hsla(226, 100%, 97%, 0.636);
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    height: 100px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.music-container .left-music table {
+    display: inline-block;
+    margin-left: 15px;
+}
+.music-container .left-music table p:first-child {
+    font-weight: 900;
+    color: var(--Dark-blue);
+}
+.music-container .left-music table p:last-child {
+    color: var(--Desaturated-blue);
+    font-weight: 500;
+}
+.music-container .right-music a:hover {
+    text-decoration: none;
+    color: hsla(245, 75%, 52%, 0.826);
+    transition: 1s;
+}
+.foot {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.btn button {
+    border: none;
+    background: var(--Bright-blue);
+    color: white;
+    padding: 15px 100px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px #ccc;
+    margin-bottom: 30px;
+}
+.btn button:hover {
+    background-color: hsla(245, 75%, 52%, 0.826);
+    transition: 0.3s;
+}
+.foot .cancel {
+    padding-bottom: 50px;
+    color: var(--Desaturated-blue);
+}
+.foot .cancel p:hover {
+    color: var(--Dark-blue);
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.3s;
+}
